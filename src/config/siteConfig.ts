@@ -74,4 +74,22 @@ export const siteConfig: SiteConfig = {
       "real estate investment property",
     ],
   },
+
+  // Integrations - Scheduling, Payments, Email
+  integrations: {
+    scheduling: {
+      provider: "calendly",
+      url: "https://calendly.com/trianglekey-demo/buyer-consultation",
+      buttonText: "Schedule Consultation",
+    },
+    payments: {
+      provider: "stripe",
+      mode: "deposit",
+      depositAmount: 25000, // $250.00 retainer
+      buttonText: "Pay $250 Retainer",
+    },
+    email: {
+      provider: "resend",
+    },
+  },
 };
